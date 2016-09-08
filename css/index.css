@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+  background-color: white;
+  font-family: 'helvetica neue', helvetica, sans-serif; 
 }
 
 /* COLOR */
@@ -117,8 +118,27 @@ body {
   overflow: hidden;
 }
 .Media-body {
-  overflow: hidden;  
+  overflow: hidden;
 }
+
+
 .Media-img {
   float: right;
+}
+
+
+@media screen and (min-width: 60em) {
+  .Media-l {
+    overflow: hidden;
+  }
+
+  .Media-body-l {
+    overflow: hidden;
+  }
+  .Media-img-l {
+    float: right;
+  }
+  .Media-imgExt-l {
+    float: left;
+  }
 }
