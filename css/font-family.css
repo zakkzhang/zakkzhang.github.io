@@ -1,0 +1,32 @@
+/*font-family: 'Celias Bold'
+font-family: 'Celias Light'
+font-family: 'Celias Medium'
+font-family: 'Celias'*/
+
+.ff-cl {
+  font-family: 'Celias Light'
+}
+
+@media (min-width: 800px){
+  .ff-cl-l {
+    font-family: 'Celias Light'
+  }
+}
+.ff-cm {
+  font-family: 'Celias Medium'
+}
+
+@media (min-width: 800px){
+  .ff-cm-l {
+    font-family: 'Celias Medium'
+  }
+}
+.ff-cb {
+  font-family: 'Celias Bold'
+}
+
+@media (min-width: 800px){
+  .ff-cb-l {
+    font-family: 'Celias Bold'
+  }
+}
