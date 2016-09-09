@@ -46,7 +46,9 @@ body {
 }
 @media screen and (min-width: 60em) {
   .bubble-left {
-    max-width: 333px;
+    max-width: 400px;
+    line-height: 1.5;
+    padding: 15px 25px;
   }
 }
 
@@ -88,7 +90,9 @@ body {
 }
 @media screen and (min-width: 60em) {
   .bubble-right {
-    max-width: 333px;
+    max-width: 400px;
+    line-height: 1.5;
+    padding: 15px 25px;
   }
 }
 
