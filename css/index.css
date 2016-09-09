@@ -5,6 +5,9 @@ body {
 
 /* COLOR */
 
+.near-white {
+  color: #f7fbf7;
+}
 .grey {
     color: #887f7f;
 }
