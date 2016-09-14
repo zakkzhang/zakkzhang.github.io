@@ -713,6 +713,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .tracked24 { letter-spacing: 2.4px; }
 .tracked26 { letter-spacing: 2.6px; }
 .tracked32 { letter-spacing: 3.2px; }
+.tracked27 { letter-spacing: 2.7px; }
+.tracked32 { letter-spacing: 3.2px; }
 .tracked28 { letter-spacing: 2.8px; }
 .tracked32 { letter-spacing: 3.2px; }
 .tracked30 { letter-spacing: 3px; }
@@ -728,6 +730,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .tracked75 { letter-spacing: 7.5px; }
 .tracked79 { letter-spacing: 7.9px; }
 .tracked11 { letter-spacing: 1.1px; }
+.tracked106 { letter-spacing: 10.6px; }
 /*
 
    LINE HEIGHT / LEADING
@@ -1718,10 +1721,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .fz30 { font-size: 30px; }
 .fz32 { font-size: 32px; }
 .fz34 { font-size: 34px; }
+.fz36 { font-size: 36px; }
 .fz35 { font-size: 35px; }
 .fz40 { font-size: 40px; }
 .fz45 { font-size: 45px; }
 .fz46 { font-size: 46px; }
+.fz48 { font-size: 48px; }
 /*
 
    TYPOGRAPHY
@@ -2119,6 +2124,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked22-ns { letter-spacing: 2.2px; }
  .tracked24-ns { letter-spacing: 2.4px; }
  .tracked26-ns { letter-spacing: 2.6px; }
+ .tracked27-ns { letter-spacing: 2.7px; }
  .tracked28-ns { letter-spacing: 2.8px; }
  .tracked32-ns { letter-spacing: 3.2px; }
  .tracked30-ns { letter-spacing: 3px; }
@@ -2134,6 +2140,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked75-ns { letter-spacing: 7.5px; }
  .tracked79-ns { letter-spacing: 7.9px; }
  .tracked11-ns { letter-spacing: 1.1px; }
+ .tracked106-ns { letter-spacing: 10.6px; }
  .lh-solid-ns { line-height: 1; }
  .lh-title-ns { line-height: 1.25; }
  .lh-copy-ns { line-height: 1.5; }
@@ -2798,10 +2805,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .fz30-ns { font-size: 30px; }
  .fz32-ns { font-size: 32px; }
  .fz34-ns { font-size: 34px; }
+ .fz36-ns { font-size: 36px; }
  .fz35-ns { font-size: 35px; }
  .fz40-ns { font-size: 40px; }
  .fz45-ns { font-size: 45px; }
  .fz46-ns { font-size: 46px; }
+ .fz48-ns { font-size: 48px; }
  .measure-ns { max-width: 30em; }
  .measure-wide-ns { max-width: 34em; }
  .measure-narrow-ns { max-width: 20em; }
@@ -2991,6 +3000,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked22-m { letter-spacing: 2.2px; }
  .tracked24-m { letter-spacing: 2.4px; }
  .tracked26-m { letter-spacing: 2.6px; }
+ .tracked27-m { letter-spacing: 2.7px; }
  .tracked28-m { letter-spacing: 2.8px; }
  .tracked32-m { letter-spacing: 3.2px; }
  .tracked30-m { letter-spacing: 3px; }
@@ -3006,6 +3016,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked75-m { letter-spacing: 7.5px; }
  .tracked79-m { letter-spacing: 7.9px; }
  .tracked11-m { letter-spacing: 1.1px; }
+ .tracked106-m { letter-spacing: 10.6px; }
  .lh-solid-m { line-height: 1; }
  .lh-title-m { line-height: 1.25; }
  .lh-copy-m { line-height: 1.5; }
@@ -3669,10 +3680,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .fz30-m { font-size: 30px; }
  .fz32-m { font-size: 32px; }
  .fz34-m { font-size: 34px; }
+ .fz36-m { font-size: 36px; }
  .fz35-m { font-size: 35px; }
  .fz40-m { font-size: 40px; }
  .fz45-m { font-size: 45px; }
  .fz46-m { font-size: 46px; }
+ .fz48-m { font-size: 48px; }
  .measure-m { max-width: 30em; }
  .measure-wide-m { max-width: 34em; }
  .measure-narrow-m { max-width: 20em; }
@@ -3856,6 +3869,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked22-l { letter-spacing: 2.2px; }
  .tracked24-l { letter-spacing: 2.4px; }
  .tracked26-l { letter-spacing: 2.6px; }
+ .tracked27-l { letter-spacing: 2.7px; }
  .tracked28-l { letter-spacing: 2.8px; }
  .tracked32-l { letter-spacing: 3.2px; }
  .tracked30-l { letter-spacing: 3px; }
@@ -3871,6 +3885,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .tracked75-l { letter-spacing: 7.5px; }
  .tracked79-l { letter-spacing: 7.9px; }
  .tracked11-l { letter-spacing: 1.1px; }
+ .tracked106-l { letter-spacing: 10.6px; }
  .lh-solid-l { line-height: 1; }
  .lh-title-l { line-height: 1.25; }
  .lh-copy-l { line-height: 1.5; }
@@ -4543,10 +4558,12 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .fz30-l { font-size: 30px; }
  .fz32-l { font-size: 32px; }
  .fz34-l { font-size: 34px; }
+ .fz36-l { font-size: 36px; }
  .fz35-l { font-size: 35px; }
  .fz40-l { font-size: 40px; }
  .fz45-l { font-size: 45px; }
  .fz46-l { font-size: 46px; }
+ .fz48-l { font-size: 48px; }
  .measure-l { max-width: 30em; }
  .measure-wide-l { max-width: 34em; }
  .measure-narrow-l { max-width: 20em; }
