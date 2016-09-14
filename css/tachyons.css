@@ -1208,6 +1208,20 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .pr50 { padding-right: 50px; }
 .pb50 { padding-bottom: 50px; }
 .pl50 { padding-left: 50px; }
+.ma50 { margin: 50px; }
+.mv50 { margin-top: 50px; margin-bottom: 50px; }
+.mh50 { margin-left: 50px; margin-right: 50px; }
+.mt50 { margin-top: 50px; }
+.mr50 { margin-right: 50px; }
+.mb50 { margin-bottom: 50px; }
+.ml50 { margin-left: 50px; }
+.pa50 { padding: 50px; }
+.pv50 { padding-top: 50px; padding-bottom: 50px; }
+.ph50 { padding-left: 50px; padding-right: 50px; }
+.pt50 { padding-top: 50px; }
+.pr50 { padding-right: 50px; }
+.pb50 { padding-bottom: 50px; }
+.pl50 { padding-left: 50px; }
 .ma76 { margin: 76px; }
 .mv76 { margin-top: 76px; margin-bottom: 76px; }
 .mh76 { margin-left: 76px; margin-right: 76px; }
@@ -2306,6 +2320,20 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .pr50-ns { padding-right: 50px; }
  .pb50-ns { padding-bottom: 50px; }
  .pl50-ns { padding-left: 50px; }
+ .ma50-ns { margin: 50px; }
+ .mv50-ns { margin-top: 50px; margin-bottom: 50px; }
+ .mh50-ns { margin-left: 50px; margin-right: 50px; }
+ .mt50-ns { margin-top: 50px; }
+ .mr50-ns { margin-right: 50px; }
+ .mb50-ns { margin-bottom: 50px; }
+ .ml50-ns { margin-left: 50px; }
+ .pa50-ns { padding: 50px; }
+ .pv50-ns { padding-top: 50px; padding-bottom: 50px; }
+ .ph50-ns { padding-left: 50px; padding-right: 50px; }
+ .pt50-ns { padding-top: 50px; }
+ .pr50-ns { padding-right: 50px; }
+ .pb50-ns { padding-bottom: 50px; }
+ .pl50-ns { padding-left: 50px; }
  .ma76-ns { margin: 76px; }
  .mv76-ns { margin-top: 76px; margin-bottom: 76px; }
  .mh76-ns { margin-left: 76px; margin-right: 76px; }
@@ -3156,6 +3184,20 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .pr43-m { padding-right: 43px; }
  .pb43-m { padding-bottom: 43px; }
  .pl43-m { padding-left: 43px; }
+ .pa50-m { padding: 50px; }
+ .pv50-m { padding-top: 50px; padding-bottom: 50px; }
+ .ph50-m { padding-left: 50px; padding-right: 50px; }
+ .pt50-m { padding-top: 50px; }
+ .pr50-m { padding-right: 50px; }
+ .pb50-m { padding-bottom: 50px; }
+ .pl50-m { padding-left: 50px; }
+ .ma50-m { margin: 50px; }
+ .mv50-m { margin-top: 50px; margin-bottom: 50px; }
+ .mh50-m { margin-left: 50px; margin-right: 50px; }
+ .mt50-m { margin-top: 50px; }
+ .mr50-m { margin-right: 50px; }
+ .mb50-m { margin-bottom: 50px; }
+ .ml50-m { margin-left: 50px; }
  .pa50-m { padding: 50px; }
  .pv50-m { padding-top: 50px; padding-bottom: 50px; }
  .ph50-m { padding-left: 50px; padding-right: 50px; }
@@ -4016,6 +4058,20 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .pr43-l { padding-right: 43px; }
  .pb43-l { padding-bottom: 43px; }
  .pl43-l { padding-left: 43px; }
+ .pa50-l { padding: 50px; }
+ .pv50-l { padding-top: 50px; padding-bottom: 50px; }
+ .ph50-l { padding-left: 50px; padding-right: 50px; }
+ .pt50-l { padding-top: 50px; }
+ .pr50-l { padding-right: 50px; }
+ .pb50-l { padding-bottom: 50px; }
+ .pl50-l { padding-left: 50px; }
+ .ma50-l { margin: 50px; }
+ .mv50-l { margin-top: 50px; margin-bottom: 50px; }
+ .mh50-l { margin-left: 50px; margin-right: 50px; }
+ .mt50-l { margin-top: 50px; }
+ .mr50-l { margin-right: 50px; }
+ .mb50-l { margin-bottom: 50px; }
+ .ml50-l { margin-left: 50px; }
  .pa50-l { padding: 50px; }
  .pv50-l { padding-top: 50px; padding-bottom: 50px; }
  .ph50-l { padding-left: 50px; padding-right: 50px; }
