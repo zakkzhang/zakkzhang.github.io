@@ -8,6 +8,67 @@
     <title>Travel Buddy</title>
     <link rel="stylesheet" href="/css/tachyons.css">
     <link rel="stylesheet" href="/css/index.css">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="http://premium.gethello.im/">
+    <meta property="og:site_name" content="Hello">
+    <meta property="og:title" content="Hello+">
+    <meta property="og:description" content="Travel Buddy">
+    <meta property="og:image" content="http://premium.gethello.im/images/invited+.png">
+    <meta property="fb:app_id" content="1052943744786983">
+    <script>
+        var invitation_code = null;
+        var inviter_name = null;
+        var inviter_avatar_src = null;
+        var data_ref = null;
+
+        var url_search = window.location.search;
+        var code = url_search.split("=");
+        if(code && code.length > 0){
+            invitation_code = code[1];
+            data_ref = code[1];
+        } else {
+            alert("Wrong invitation code");
+        }
+
+        function createXHR() {
+            var xhr;
+            if (window.ActiveXObject) {
+                try {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                catch (e) {
+                    alert(e.message);
+                    xhr = null;
+                }
+            }
+            else {
+                xhr = new XMLHttpRequest();
+            }
+
+            return xhr;
+        }
+        var xhr = createXHR();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                console.log(typeof xhr.responseText);
+                var responseText = xhr.responseText;
+                if(!responseText){
+//                    inviter_name = "Sorry, No invitation code provided";
+                    window.location.href = "http://fb.gethello.im/"
+                    return;
+                }
+                var data = JSON.parse(responseText);
+                inviter_name = data["@inviter"]["name"];
+                inviter_avatar_src = data["@inviter"]["avatar"];
+                console.log(invitation_code,inviter_name,inviter_avatar_src);
+                avatar1 = '<img src="'+inviter_avatar_src+'" alt="" class="js-avatar-1 br-100 dn-ns" width="80px" height="80px">';
+                avatar2 = '<img src="'+inviter_avatar_src+'" alt="" class="js-avatar-2 br-100 dn dib-ns" width="120px" height="120px">';
+            }
+        }
+        xhr.open('GET', 'https://api.gethello.im/invite-code/'+invitation_code, false)
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.send()
+    </script>
   </head>
   <body>
 
@@ -49,20 +110,22 @@
     <div class="mw320px mw910px-l center">
         <div class="pt60 pt90-l tc fl-l tl-l">
             <!--  ===invitation words=== 开始 -->
-            <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/p200x200/13043806_647167261682_2247982412439405022_n.jpg?oh=df8cddad7c99b21acd6c0a804df17629&amp;oe=5876B7CE&amp;__gda__=1485118373_346e34fa11ec4ca1e26a8b069bf4eaef" alt="" class="js-avatar-1 br-100 dn-l" width="80px" height="80px">
-            <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/p200x200/13043806_647167261682_2247982412439405022_n.jpg?oh=df8cddad7c99b21acd6c0a804df17629&amp;oe=5876B7CE&amp;__gda__=1485118373_346e34fa11ec4ca1e26a8b069bf4eaef" alt="" class="js-avatar-2 br-100 dn dib-l" width="120px" height="120px">
+            <script type="text/javascript"> document.write(avatar1); </script>
+            <script type="text/javascript"> document.write(avatar2); </script>
+            <img class="dn"src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/p200x200/13043806_647167261682_2247982412439405022_n.jpg?oh=df8cddad7c99b21acd6c0a804df17629&amp;oe=5876B7CE&amp;__gda__=1485118373_346e34fa11ec4ca1e26a8b069bf4eaef" alt="" class="js-avatar-1 br-100 dn-l" width="80px" height="80px">
+            <img class="dn"src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xat1/v/t1.0-1/p200x200/13043806_647167261682_2247982412439405022_n.jpg?oh=df8cddad7c99b21acd6c0a804df17629&amp;oe=5876B7CE&amp;__gda__=1485118373_346e34fa11ec4ca1e26a8b069bf4eaef" alt="" class="js-avatar-2 br-100 dn dib-l" width="120px" height="120px">
             <div class="dn-l pt15">
-              <p class="fz16 fw5 tracked22"><span class="b" style="color:#1371FB">Desmond<script type="text/javascript">document.write(inviter_name)</script></p>
+              <p class="fz16 fw5 tracked22"><span class="b" style="color:#1371FB"><script type="text/javascript">document.write(inviter_name)</script></p>
               <p class="fz16 fw5 tracked27 black-80">invites you to</p>
               <p class="fz36 fw5 tracked34 black-80 mt5">Hello Plus!</p>
             </div>
             <div class="dn db-l pt15">
-              <p class="fz24 tracked27 fw5 "><span class="b" style="color:#1371FB">Desmond<script type="text/javascript">document.write(inviter_name)</script> </span>invites you to </p>
+              <p class="fz24 tracked27 fw5 "><span class="b" style="color:#1371FB"><script type="text/javascript">document.write(inviter_name)</script> </span>invites you to </p>
               <p class="fz48 b tracked106">Hello Plus!</p>
             </div>
             <!--  ===facebook=== 开始 -->
             <div class="mt40 mt50-l">
-              <p class="fz12 fz16-l fw5 tracked3 tracked4 black-80">Get your invite code now:</p>
+              <p class="mb10 fz12 fz16-l fw5 tracked3 tracked4 black-80">Get your invite code here:</p>
               <div class="fb-send-to-messenger" messenger_app_id="1052943744786983" page_id="612438702252425"
                 data-ref="Zakk181" color="blue" size="xlarge"></div>
             </div>
@@ -433,6 +496,30 @@
    </div>
        <!--  ===footer=== 结束 -->
   </body>
+<script src="/js/facebook.js"></script>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: "1052943744786983",
+            xfbml: true,
+            version: "v2.6"
+        });
+    };
+    var menu = document.querySelector(".js-btn-menu");
+    var nav = document.querySelector('.js-view-navigation');
+    menu.addEventListener('click', function () {
+        var classList = (new Array(nav.classList)).join(" ");
+        console.log(classList);
+        var has_dn = classList.indexOf("dn") != -1 ? true : false;
+        if (has_dn) {
+            classList = classList.replace('dn', "");
+        } else {
+            classList = classList + " dn";
+        }
+        nav.className = classList
+    })
+
+</script>
   <script>
     var menu = document.querySelector(".js-btn-menu");
     var nav = document.querySelector('.js-view-navigation');
