@@ -783,6 +783,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .mw270px { max-width: 270px; }
 .mw278px { max-width: 278px; }
 .mw285px { max-width: 285px; }
+.h0px { height: 0; }
 /* Max Width String Properties */
 .mw-none { max-width: none; }
 .mw250px { max-width: 250px; }
@@ -4175,6 +4176,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .w800px-l { width: 800px; }
  .h647px-l { height: 647px; }
  .h544px-l { height: 544px; }
+ .h180px-l { height: 180px; }
  .mw270px-l { max-width: 270px; }
  .mw278px-l { max-width: 278px; }
  .w1-l { width: 1rem; }
